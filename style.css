@@ -515,52 +515,64 @@ body {
 }
 
 .test{
-    padding: 200px;
+    padding: 150px;
 }
-
-/* Basic Styles */
-.testimonial-container {
+.testimonial-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.testimonial {
-    max-width: 300px;
-    padding: 20px;
-    background-color: #f9f9f9;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+  
+  .testimonial {
+    background-color: #f2f2f2;
     border-radius: 5px;
-    text-align: center;
-}
-
-.testimonial img {
-    width: 100px;
-    height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(31% - 20px);
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial {
+      width: 100%;
+    }
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .info img {
     border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.testimonial-text {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.testimonial-author {
+    height: 70px;
+    margin-right: 20px;
+    width: 70px;
+  }
+  
+  .name-job {
+    flex: 1;
+  }
+  
+  .name {
+    font-size: 20px;
     font-weight: bold;
-}
+    margin-bottom: 5px;
+  }
+  
+  .job {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+  }
 
-/* Media Queries for responsiveness */
-@media only screen and (min-width: 768px) {
-    .testimonial {
-        max-width: calc(50% - 40px);
-    }
-}
 
-@media only screen and (min-width: 992px) {
-    .testimonial {
-        max-width: calc(33.33% - 40px);
-    }
-}
 
